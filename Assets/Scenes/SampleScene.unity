@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 79982548}
   - component: {fileID: 79982547}
   - component: {fileID: 79982546}
+  - component: {fileID: 79982552}
   - component: {fileID: 79982551}
   m_Layer: 0
   m_Name: Sphere
@@ -268,8 +269,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e760dd382e73a446a04887c5438ba36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sphereRigidbody: {fileID: 79982546}
+  sphereRigidbody: {fileID: 0}
   ballSpeed: 2
+--- !u!114 &79982552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 79982545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e3d0b6d13fa63a47b5e1d89ff26a7ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnMove:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 79982551}
+        m_TargetAssemblyTypeName: BallController, Assembly-CSharp
+        m_MethodName: MoveBall
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &268066611
 GameObject:
   m_ObjectHideFlags: 0
