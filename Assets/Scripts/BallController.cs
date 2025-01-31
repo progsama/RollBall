@@ -3,7 +3,7 @@ using UnityEngine;
 public class BallController : MonoBehaviour
 {
     [SerializeField] private Rigidbody sphereRigidbody;
-    [SerializeField] private float ballSpeed = 2f;
+    [SerializeField] private float ballSpeed = 5f;
     [SerializeField] private bool jumpKey = false;
 
     public void MoveBall(Vector2 input)
@@ -18,7 +18,6 @@ public class BallController : MonoBehaviour
         {
             jumpKey = false;
             sphereRigidbody.AddForce(Vector3.up * ballSpeed, ForceMode.VelocityChange);
-            
         }
     }
 }

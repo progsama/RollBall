@@ -270,7 +270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sphereRigidbody: {fileID: 79982546}
-  ballSpeed: 2
+  ballSpeed: 5
   jumpKey: 0
 --- !u!114 &79982552
 MonoBehaviour:

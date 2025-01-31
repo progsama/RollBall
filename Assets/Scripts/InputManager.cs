@@ -5,7 +5,6 @@ public class InputManager : MonoBehaviour
 {
     public UnityEvent<Vector2> OnMove = new UnityEvent<Vector2>();
 
-
     // Update is called once per frame
     void Update()
     {
